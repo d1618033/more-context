@@ -1,5 +1,5 @@
-CODE=src
-FOLDERS=src tests
+CODE=more_context
+FOLDERS=more_context tests
 
 check:
 	poetry run pylint ${CODE}
