@@ -22,4 +22,5 @@ jobs:
         pip install poetry
         poetry install
     - name: Check
+      run: |
         make check
