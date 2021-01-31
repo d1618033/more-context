@@ -15,18 +15,18 @@ Like `@contextmanager`, but safe.
 
 Code like this:
 
-        @safe_context_manager
-        def my_ctx():
-            lock = lock_resource()
-            yield
-            lock.delete()
+    @safe_context_manager
+    def my_ctx():
+        lock = lock_resource()
+        yield
+        lock.delete()
 
 Is equivalent to:
 
-        @contextmanager
-        def my_ctx():
-            lock = lock_resource()
-            try:
-                yield
-            finally:
-                lock.delete()
+    @contextmanager
+    def my_ctx():
+        lock = lock_resource()
+        try:
+            yield
+        finally:
+            lock.delete()
