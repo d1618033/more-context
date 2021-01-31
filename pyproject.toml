@@ -21,11 +21,8 @@ python = "^3.6"
 pytest = "*"
 mypy = "*"
 black = "*"
-flake8-bandit = "*"
-flake8-bugbear = "*"
-flake8-docstrings = "*"
-flake8-rst-docstrings = "*"
 pytest-cov = "*"
+pylint = "^2.6.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
